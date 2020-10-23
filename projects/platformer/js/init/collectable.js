@@ -44,9 +44,9 @@
         createCollectable(type.kennedi, 420, 600, 900, 800);
         createCollectable(type.steve, 0, -1000, 1000, 0.1);
         createCollectable(type.max, 360, -1000, 1000, 0.1);
-        createCollectable(type.db, 360, 430, 80, 60);
+        createCollectable(type.db, 360, 460, 80, 60);
         createCollectable(type.db, 740, 250, 0.01, 60);
-        createCollectable(type.grace, 200, -1000, 1000, 0.1);
+        createCollectable(type.grace, 180, -1000, 1000, 0.1);
         // ALL YOUR CODE GOES ABOVE HERE ///////////////////////////////////////
         ////////////////////////////////////////////////////////////////////////
     };
