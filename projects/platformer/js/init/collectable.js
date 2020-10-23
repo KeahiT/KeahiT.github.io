@@ -47,6 +47,7 @@
         createCollectable(type.db, 360, 460, 80, 60);
         createCollectable(type.db, 740, 250, 0.01, 60);
         createCollectable(type.grace, 180, -1000, 1000, 0.1);
+        createCollectable(type.steve, 50, 500, 1, 1);
         // ALL YOUR CODE GOES ABOVE HERE ///////////////////////////////////////
         ////////////////////////////////////////////////////////////////////////
     };
