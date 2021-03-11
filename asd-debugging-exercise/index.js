@@ -11,7 +11,7 @@ var $board = $('#board');
 var boardWidth = $($board).width();
 var boardHeight = $($board).height();
 var circles = [];
-var circleRadiu s = 10;
+var circleRadius = 10;
 
 //////////
 // startup
@@ -42,10 +42,10 @@ function makeCircle(id){
     var maxY = boardHeight - circleRadius*2;
     
     circle.id = "#" + id;
-    circle.x = Math.random() * maXX + circleRadius;
+    circle.x = Math.random() * maxX + circleRadius;
     circle.y = Math.random() * maxY + circleRadius;
     circle.speedX = decideSpeed();
-    circle.speedY = desideSpeed();
+    circle.speedY = decideSpeed();
     
     return circle;
 }
@@ -57,11 +57,11 @@ function decideSpeed(){
 
 // this generates an id for a circle given the circle's number
 function getId(number){
-    return "circle" + number; ()
+    return "circle" + number; 
 }
 
 // this adds a circle into the HTML
-funtion addNewCircleElement(circle, id){
+function addNewCircleElement(circle, id){
     var $circle = $('<div>').attr('id', id)
         .css('left', circle.x)
         .css('top', circle.y)
@@ -75,9 +75,9 @@ funtion addNewCircleElement(circle, id){
 //////////////////
 
 // this should move all of the circles
-function update){
+function update() {
     for (var i = 0; i < maxCircles; i++){
-        var circle = circles[j];
+        var circle = circles[i];
         moveCircle(circle);
         bounceCircle(circle);
         updateCircleOnScreen(circle);
@@ -96,7 +96,7 @@ function moveCircle(circle){
 
 // this bounces circles if they hit a wall
 function bounceCircle(circle){
-    if (circle.x < 0{
+    if (circle.x < 0){
         circle.x -= circle.speedX;
         circle.speedX *= -1;
     }
@@ -121,5 +121,4 @@ function updateCircleOnScreen(circle){
     $(circle.id).css('left', circle.x);
     $(circle.id).css('top', circle.y);
 }
-
-});
+})
